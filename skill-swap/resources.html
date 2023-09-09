@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Dashboard | herogautam</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="index.html" class="logo">
+            <!-- <i class='bx bx-code-alt'></i> -->
+            <p>&ensp;</p>
+            <img src="images/logo.png" alt="logo" width="34" height="34">
+            <p>&ensp;</p>
+            <p>&nbsp;</p>
+            <div class="logo-name"><span>Skill</span>Swap</div>
+        </a>
+        <ul class="side-menu">
+            <li><a href="members.html"><i class='bx bxs-dashboard'></i>Members</a></li>
+            <li><a href="notes.html"><i class='bx bx-analyse'></i>Clubs</a></li>
+            <li class="active"><a href="resources.html"><i class='bx bx-store-alt'></i>Library</a></li>
+            <li><a href="#"><i class='bx bx-message-square-dots'></i>Peer Chat</a></li>
+            <li><a href="#"><i class='bx bx-group'></i>Profile</a></li>
+            <li><a href="#"><i class='bx bx-cog'></i>Settings</a></li>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="#" class="notif">
+                <i class='bx bx-bell bx-sm'></i>
+                <span class="count">12</span>
+            </a>
+
+
+            <a href="#" class="profile">
+                <img src="images/logo.png">
+            </a>
+        </nav>
+
+        <!-- End of Navbar -->
+
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Members Of Clubs</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">
+                                Top Contributors
+                            </a></li>
+                        /
+                        <li><a href="#" class="active">September</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="report">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-bar-chart-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2z" />
+                    </svg>
+                    <span>Leederboard</span>
+                </a>
+            </div>
+            <!-- Insights -->
+            <ul class="insights">
+                <li>
+                    <i class='bx bxs-user'></i>
+                    <span class="info">
+                        <h3>
+                            Gautam
+                        </h3>
+                        <p>Contributor</p>
+                    </span>
+                </li>
+                <li><i class='bx bxs-user'></i>
+                    <span class="info">
+                        <h3>
+                            Srikar
+                        </h3>
+                        <p>Proficient</p>
+                    </span>
+                </li>
+                <li><i class='bx bxs-user'></i>
+                    <span class="info">
+                        <h3>
+                            Siddhart
+                        </h3>
+                        <p>Scholar</p>
+                    </span>
+                </li>
+                <li><i class='bx bxs-user'></i>
+                    <!-- <li><i class='bx bx-dollar-circle'></i> -->
+                    <span class="info">
+                        <h3>
+                            Jayasree
+                        </h3>
+                        <p>Scholar</p>
+                    </span>
+                </li>
+            </ul>
+            <!-- End of Insights -->
+
+
+            <div class="bottom-data">
+                <div class="orders">
+                    <div class="header">
+                        <i class='bx bx-receipt'></i>
+                        <h3>Council of clubs</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-search'></i>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>User</th>
+                                <th>Order Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="images/profile-1.jpg">
+                                    <p>John Doe</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/profile-1.jpg">
+                                    <p>John Doe</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/profile-1.jpg">
+                                    <p>John Doe</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status process">Processing</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/profile-1.jpg">
+                                    <p>John Doe</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status process">Processing</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/profile-1.jpg">
+                                    <p>John Doe</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status process">Processing</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/profile-1.jpg">
+                                    <p>John Doe</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status process">Processing</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/profile-1.jpg">
+                                    <p>John Doe</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status process">Processing</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/profile-1.jpg">
+                                    <p>John Doe</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status process">Processing</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="images/profile-1.jpg">
+                                    <p>John Doe</p>
+                                </td>
+                                <td>14-08-2023</td>
+                                <td><span class="status process">Processing</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Reminders -->
+                <div class="reminders">
+                    <div class="header">
+                        <i class='bx bx-note'></i>
+                        <h3>Colleges </h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-search'></i>
+                    </div>
+                    <ul class="task-list">
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Vignan's Institute of Information Technology (VIIT) Vizag</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Anil Neerukonda Institute of Technology & Sciences (ANITS)</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="not-completed">
+                            <div class="task-title">
+                                <i class='bx bx-x-circle'></i>
+                                <p>Gandhi Institute of Technology and Management (GITAM) Vizag</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- End of Reminders-->
+
+            </div>
+
+            <!-- Graph Box -->
+            <div class="bottom-data">
+                <div class="reminders">
+                    <div class="row">
+                        <div class="col-12 col-lg-12 col-xl-12 d-flex">
+                            <div class="card flex-fill comman-shadow">
+                                <div class="card-header">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <h5 class="card-title">Learning Activity</h5>
+                                        </div>
+                                        <div class="col-6">
+                                            <ul class="chart-list-out">
+                                                <li><span class="circle-blue"></span>Teacher</li>
+                                                <li><span class="circle-green"></span>Student</li>
+                                                <li class="star-menus"><a href="javascript:;"><i
+                                                            class="fas fa-ellipsis-v"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div id="apexcharts-area"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Graph Box -->
+            
+            <!-- Start-Square Box -->
+            <div class="bottom-data">
+                <div class="reminders">
+                    
+                </div>
+            </div>
+            <!-- End-Square Box -->
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+    
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <script src="assets/plugins/apexchart/apexcharts.min.js"></script>
+
+
+    <script src="assets/plugins/apexchart/chart-data.js"></script>
+
+</body>
+
+</html>
