@@ -1,0 +1,583 @@
+<html lang="en">
+  <head>
+    <title>HTML FlexBox Template - Two percentage column, left content</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <meta
+      name="description"
+      content="Use this HTML basic website two percentage column layout template where the navigation menu and the extra stuff are at the same width on the right column, the main content is on the left column."
+    />
+    <meta name="generator" content="HAPedit 3.1" />
+    <link
+      rel="canonical"
+      href="https://www.w3docs.com/snippets/html/layout_templates/25.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="HTML FlexBox Template - Two percentage column, left content"
+    />
+    <meta
+      property="og:description"
+      content="Use this HTML basic website two percentage column layout template where the navigation menu and the extra stuff are at the same width on the right column, the main content is on the left column."
+    />
+    <meta
+      property="og:image"
+      content="https://www.w3docs.com/build/images/logo-amp.png"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="192" />
+    <meta property="og:image:height" content="192" />
+    <meta property="og:image:alt" content="W3dcos" />
+    <style type="text/css">
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+
+      body {
+        color: #292929;
+        font: 90% Roboto, Arial, sans-serif;
+        font-weight: 300;
+      }
+
+      p {
+        padding: 0 10px;
+        line-height: 1.8;
+      }
+
+      ul li {
+        padding-right: 10px;
+        line-height: 1.6;
+      }
+
+      h3 {
+        padding: 5px 20px;
+        margin: 0;
+      }
+
+      div#header {
+        position: relative;
+      }
+
+      div#header h1 {
+        height: 80px;
+        line-height: 80px;
+        margin: 0;
+        padding-left: 10px;
+        background: #e0e0e0;
+        color: #292929;
+      }
+
+      div#header a {
+        position: absolute;
+        right: 0;
+        top: 23px;
+        padding: 10px;
+        color: #006;
+      }
+
+      div#navigation {
+        background: #7cb71c;
+      }
+
+      div#navigation li {
+        list-style: none;
+      }
+
+      div#extra {
+        background: #eadbc8;
+      }
+
+      div#footer {
+        background: #42444e;
+        color: #fff;
+      }
+
+      div#footer p {
+        padding: 20px 10px;
+      }
+
+      div#wrapper {
+        float: left;
+        width: 100%;
+        margin-left: -33%;
+      }
+
+      div#content {
+        margin-left: 33%;
+      }
+
+      div#navigation {
+        float: right;
+        width: 32.9%;
+      }
+
+      div#extra {
+        float: right;
+        clear: right;
+        width: 32.9%;
+      }
+
+      div#footer {
+        clear: both;
+        width: 100%;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      body {
+        background-color: #eadbc8;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      main.table {
+        width: 45vw;
+        height: 85vh;
+        background-color: #fff5;
+        backdrop-filter: blur(7px);
+        box-shadow: 0 0.4rem 0.8rem #0005;
+        border-radius: 0.8rem;
+        margin-left: 30px;
+
+        overflow: hidden;
+      }
+
+      .table__header {
+        width: 80%;
+        height: 10%;
+        background-color: #fff4;
+        padding: 0.8rem 1rem;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .table__header .input-group {
+        width: 50%;
+        height: 80%;
+        background-color: #fff5;
+        padding: 0 0.8rem;
+        border-radius: 2rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        transition: 0.2s;
+      }
+
+      .table__header .input-group:hover {
+        width: 100%;
+        background-color: #fff8;
+        box-shadow: 0 0.1rem 0.4rem #0002;
+      }
+
+      .table__header .input-group img {
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+
+      .table__header .input-group input {
+        width: 100%;
+        padding: 0 0.5rem 0 0.3rem;
+        background-color: transparent;
+        border: none;
+        outline: none;
+      }
+
+      .table__body {
+        width: 95%;
+        max-height: calc(89% - 1.6rem);
+        background-color: #fffb;
+
+        margin: 0.8rem auto;
+        border-radius: 0.6rem;
+
+        overflow: auto;
+        overflow: overlay;
+      }
+
+      .table__body::-webkit-scrollbar {
+        width: 50%;
+        height: 0.5rem;
+      }
+
+      .table__body::-webkit-scrollbar-thumb {
+        border-radius: 0.5rem;
+        background-color: #0004;
+        visibility: hidden;
+      }
+
+      .table__body:hover::-webkit-scrollbar-thumb {
+        visibility: visible;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      td img {
+        width: 36px;
+        height: 36px;
+        margin-right: 0.5rem;
+        border-radius: 50%;
+
+        vertical-align: middle;
+      }
+
+      table,
+      th,
+      td {
+        border-collapse: collapse;
+        padding: 1rem;
+        text-align: left;
+      }
+
+      thead th {
+        position: sticky;
+        top: 0;
+        left: 0;
+        background-color: #d5d1defe;
+        cursor: pointer;
+        text-transform: capitalize;
+      }
+
+      tbody tr:nth-child(even) {
+        background-color: #0000000b;
+      }
+
+      tbody tr {
+        --delay: 0.1s;
+        transition: 0.5s ease-in-out var(--delay), background-color 0s;
+      }
+
+      tbody tr.hide {
+        opacity: 0;
+        transform: translateX(100%);
+      }
+
+      tbody tr:hover {
+        background-color: #fff6 !important;
+      }
+
+      tbody tr td,
+      tbody tr td p,
+      tbody tr td img {
+        transition: 0.2s ease-in-out;
+      }
+
+      tbody tr.hide td,
+      tbody tr.hide td p {
+        padding: 0;
+        font: 0 / 0 sans-serif;
+        transition: 0.2s ease-in-out 0.5s;
+      }
+
+      tbody tr.hide td img {
+        width: 0;
+        height: 0;
+        transition: 0.2s ease-in-out 0.5s;
+      }
+
+      .status {
+        padding: 0.4rem 0;
+        border-radius: 2rem;
+        text-align: center;
+      }
+
+      .status.delivered {
+        background-color: #86e49d;
+        color: #006b21;
+      }
+
+      .status.cancelled {
+        background-color: #d893a3;
+        color: #b30021;
+      }
+
+      .status.pending {
+        background-color: #ebc474;
+      }
+
+      .status.shipped {
+        background-color: #6fcaea;
+      }
+
+      @media (max-width: 1000px) {
+        td:not(:first-of-type) {
+          min-width: 12.1rem;
+        }
+      }
+
+      thead th span.icon-arrow {
+        display: inline-block;
+        width: 1.3rem;
+        height: 1.3rem;
+        border-radius: 50%;
+        border: 1.4px solid transparent;
+
+        text-align: center;
+        font-size: 1rem;
+
+        margin-left: 0.5rem;
+        transition: 0.2s ease-in-out;
+      }
+
+      thead th:hover span.icon-arrow {
+        border: 1.4px solid #6c00bd;
+      }
+
+      thead th:hover {
+        color: #6c00bd;
+      }
+
+      thead th.active span.icon-arrow {
+        background-color: #6c00bd;
+        color: #fff;
+      }
+
+      thead th.asc span.icon-arrow {
+        transform: rotate(180deg);
+      }
+
+      thead th.active,
+      tbody td.active {
+        color: #6c00bd;
+      }
+
+      .export__file {
+        position: relative;
+      }
+
+      .export__file .export__file-btn {
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        background: #fff6 url(images/export.png) center / 80% no-repeat;
+        border-radius: 50%;
+        transition: 0.2s ease-in-out;
+      }
+
+      .export__file .export__file-btn:hover {
+        background-color: #fff;
+        transform: scale(1.15);
+        cursor: pointer;
+      }
+
+      .export__file input {
+        display: none;
+      }
+
+      .export__file .export__file-options {
+        position: absolute;
+        right: 0;
+
+        width: 12rem;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        text-align: center;
+
+        opacity: 0;
+        transform: scale(0.8);
+        transform-origin: top right;
+
+        box-shadow: 0 0.2rem 0.5rem #0004;
+
+        transition: 0.2s;
+      }
+
+      .export__file input:checked + .export__file-options {
+        opacity: 1;
+        transform: scale(1);
+        z-index: 100;
+      }
+
+      .export__file .export__file-options label {
+        display: block;
+        width: 100%;
+        padding: 0.6rem 0;
+        background-color: #f2f2f2;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        transition: 0.2s ease-in-out;
+      }
+
+      .export__file .export__file-options label:first-of-type {
+        padding: 1rem 0;
+        background-color: #86e49d !important;
+      }
+
+      .export__file .export__file-options label:hover {
+        transform: scale(1.05);
+        background-color: #fff;
+        cursor: pointer;
+      }
+
+      .export__file .export__file-options img {
+        width: 2rem;
+        height: auto;
+      }
+      .contr {
+        width: 800px;
+        height: 350px;
+        background-color: WHITE;
+        margin-right: 300px;
+        border-radius: 20px;
+      }
+      .additional-div01 {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+      }
+      .additional-div02 {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(255, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="wrapper">
+        <div id="content">
+          <main class="table">
+            <section class="table__header">
+              <h1>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;User's
+                Leaderboard
+              </h1>
+            </section>
+            <section class="table__body">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Sno.</th>
+                    <th>User</th>
+                    <th>College</th>
+                    <th>Credits</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td><img src="pngegg.png" alt="" />SIDHARTH</td>
+                    <td>VIIT</td>
+                    <td>56</td>
+                  </tr>
+
+                  <tr>
+                    <td>2</td>
+                    <td><img src="pngegg.png" alt="" /> SRIKAR</td>
+                    <td>VIIT</td>
+                    <td>52</td>
+                  </tr>
+
+                  <tr>
+                    <td>3</td>
+                    <td><img src="lady.png" alt="" />HARSHITHA</td>
+                    <td>VIEW</td>
+                    <td>49</td>
+                  </tr>
+
+                  <tr>
+                    <td>4</td>
+                    <td><img src="lady.png" alt="" /> GEETHIKA</td>
+                    <td>VU</td>
+                    <td>44</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td><img src="lady.png" alt="" /> PAVANI</td>
+                    <td>VIIT</td>
+                    <td>42</td>
+                    <td></td>
+                  </tr>
+
+                  <tr>
+                    <td>6</td>
+                    <td>
+                      <img
+                        src="pngegg.png
+                                            "
+                        alt=""
+                      />
+                      GAUTAM
+                    </td>
+                    <td>VIIT</td>
+                    <td>36</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>
+                      <img
+                        src="pngegg.png
+                                            "
+                        alt=""
+                      />
+                      KRUNAL
+                    </td>
+                    <td>VIIT</td>
+                    <td>33</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>
+                      <img
+                        src="pngegg.png
+                                            "
+                        alt=""
+                      />
+                      Aayat Ali Khan
+                    </td>
+                    <td>VIIT</td>
+                    <td>32</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>
+                      <img
+                        src="pngegg.png
+                                            "
+                        alt=""
+                      />
+                      Alson GC
+                    </td>
+                    <td>VIIT</td>
+                    <td>28</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </main>
+        </div>
+      </div>
+      <div id="navigation">
+        <img src="./1234.png" alt="" width="400" />
+      </div>
+      <div id="extra">
+        <br />
+        <br />
+        <img src="./123.png" alt="" width="400" />
+      </div>
+    </div>
+    <script type="text/javascript">
+      AddFillerLink("content", "navigation", "extra");
+    </script>
+  </body>
+</html>
