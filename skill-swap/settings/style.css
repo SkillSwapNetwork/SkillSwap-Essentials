@@ -18,6 +18,10 @@ body {
     margin-top: 20px;
 }
 
+a{
+    text-decoration: none;
+}
+
 .active-back img {
     position: absolute;
     left: 0;
