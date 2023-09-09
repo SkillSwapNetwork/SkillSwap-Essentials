@@ -1,6 +1,6 @@
 # SkillSwap-Essentials
 
-#### SkillSwap: [**SkillSwap**](https://skill-swap-network.github.io/SkillSwap-Essentials/skill-swap/home.html)
+#### SkillSwap: [**SkillSwap**](https://skill-swap-network.github.io/SkillSwap-Essentials/skill-swap/index.html)
 
 #### Home Page1: [**Home Page1**](https://skill-swap-network.github.io/SkillSwap-Essentials/home-login-page/getstarted.html)
 
