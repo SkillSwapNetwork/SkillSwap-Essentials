@@ -2,232 +2,85 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-    <title>Home | SkillSwap</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="home/style.css" />
+  <link rel="stylesheet" href="home/styles.css" />
+  <title>Sign in & Sign up Form</title>
+  <link rel="icon" href="home/img/logo.png">
 
-    <link rel="icon" href="images/logo.png">
-    <!-- <link rel="shortcut icon" href="assets/img/favicon.png"> -->
-
-    <!-- <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap"
-        rel="stylesheet"> -->
-
-    <!-- <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css"> -->
-
-    <!-- <link rel="stylesheet" href="assets/plugins/feather/feather.css"> -->
-
-    <!-- <link rel="stylesheet" href="assets/plugins/icons/flags/flags.css"> -->
-
-    <!-- <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css"> -->
-    <!-- <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css"> -->
-
-    <link rel="stylesheet" href="assets/plugins/simple-calendar/simple-calendar.css">
-
-    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
 </head>
 
 <body>
-
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <a href="home.html" class="logo">
-            <!-- <i class='bx bx-code-alt'></i> -->
-            <p>&ensp;</p>
-            <img src="images/logo.png" alt="logo" width="34" height="34">
-            <p>&ensp;</p>
-            <p>&nbsp;</p>
-            <div class="logo-name"><span>Skill</span>Swap</div>
+  <div class="mainContent">
+    <!-- Navbar -->
+    <nav>
+      <div class="logo-text">
+        <a href="index.html" class="logo">
+          <div class="logo-name"><span>Skill</span>Swap</div>
         </a>
-        <ul class="side-menu">
-            <li><a href="members.html" target="_self"><i class='bx bxs-dashboard'></i>members</a></li>
-            <li><a href="notes.html"><i class='bx bx-analyse'></i>Notes/ To Do</a></li>
-            <li><a href="#"><i class='bx bx-store-alt'></i>Resources</a></li>
-            <li><a href="#"><i class='bx bx-message-square-dots'></i>Peer Chat</a></li>
-            <li><a href="#"><i class='bx bx-group'></i>Profile</a></li>
-            <li><a href="#"><i class='bx bx-cog'></i>Settings</a></li>
-        </ul>
-        <ul class="side-menu">
-            <li>
-                <a href="#" class="logout">
-                    <i class='bx bx-log-out-circle'></i>
-                    Logout
-                </a>
-            </li>
-        </ul>
-    </div>
-    <!-- End of Sidebar -->
+      </div>
+      <div class="nav__links">
+        <a href="index.html">Home</a>
+      </div>
+      <div class="nav__links">
+        <a href="#">About</a>
+      </div>
+      <div class="nav__links">
+        <a href="#">Discover</a>
+      </div>
+      <div class="nav__links">
+        <a href="#">Network</a>
+      </div>
+      <div class="nav__links">
+        <a href="#">Company</a>
+      </div>
+      <input type="checkbox" id="theme-toggle" hidden>
+      <label for="theme-toggle" class="theme-toggle"></label>
+      <a href="signup.html">
+        <button class="btn transparent" id="sign-up-btn">
+          Sign up
+        </button>
+      </a>
+    </nav>
+  </div>
+  <!-- End of Navbar -->
 
-    <!-- Main Content -->
+  <!-- Main Section -->
+  <section>
+    <div class="circle"></div>
     <div class="content">
-        <!-- Navbar -->
-        <nav>
-            <i class='bx bx-menu'></i>
-            <form action="#">
-                <div class="form-input">
-                    <input type="search" placeholder="Search...">
-                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
-                </div>
-            </form>
-            <input type="checkbox" id="theme-toggle" hidden>
-            <label for="theme-toggle" class="theme-toggle"></label>
-            <a href="#" class="notif">
-                <i class='bx bx-bell bx-sm'></i>
-                <span class="count">12</span>
-            </a>
-            <a href="#" class="profile">
-                <img src="images/logo.png">
-            </a>
-
-        </nav>
-        <!-- End of Navbar -->
-
-        <!-- Main Section -->
-        <main>
-            <!-- Graph Box -->
-            <div class="bottom-data">
-                <div class="reminders">
-                    <div class="row">
-                        <div class="col-12 col-lg-12 col-xl-12 d-flex">
-                            <div class="card flex-fill comman-shadow">
-                                <div class="card-header">
-                                    <div class="row align-items-center">
-                                        <div class="col-6">
-                                            <h5 class="card-title">Learning Activity</h5>
-                                        </div>
-                                        <div class="col-6">
-                                            <ul class="chart-list-out">
-                                                <li><span class="circle-blue"></span>Teacher</li>
-                                                <li><span class="circle-green"></span>Student</li>
-                                                <li class="star-menus"><a href="javascript:;"><i
-                                                            class="fas fa-ellipsis-v"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div id="apexcharts-area"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bottom-data">
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <h5 class="card-title">Apex Simple</h5>
-                        </div>
-                        <div class="card-body">
-                            <div id="s-line"></div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <h5 class="card-title">Area Chart</h5>
-                        </div>
-                        <div class="card-body">
-                            <div id="s-line-area"></div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <h5 class="card-title">Column Chart</h5>
-                        </div>
-                        <div class="card-body">
-                            <div id="s-col"></div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <h5 class="card-title">Column Stacked Chart</h5>
-                        </div>
-                        <div class="card-body">
-                            <div id="s-col-stacked"></div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <h5 class="card-title">Bar Chart</h5>
-                        </div>
-                        <div class="card-body">
-                            <div id="s-bar"></div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <h5 class="card-title">Mixed Chart</h5>
-                        </div>
-                        <div class="card-body">
-                            <div id="mixed-chart"></div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <h5 class="card-title">Donut Chart</h5>
-                        </div>
-                        <div class="card-body">
-                            <div id="donut-chart"></div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <h5 class="card-title">Radial Chart</h5>
-                        </div>
-                        <div class="card-body">
-                            <div id="radial-chart"></div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <!-- End of Graph Box -->
-        </main>
+      <div class="textbox">
+        <h2>SKILL SWAP <span>NETWORK</span> </h2>
+        <p>The skill swap hub is an innovative and transformative solution aimed at revolutionizing the way students
+          learn and support one another.The skill swap hub addresses this gap by providing a tailored platform that
+          intelligently matches students based on their individual proficiency levels and strengths.</p>
+        <a href="signup.html">Get Started</a>
+      </div>
+      <div class="imgbox">
+        <img src="home/img/studying.png" alt="" class="image">
+      </div>
     </div>
-    <script src="script.js"></script>
+    <ul class="thumb">
+      <li><img src="home/img/studying.png" alt="" onclick="imgslider('home/img/studying.png')"></li>
+      <li><img src="home/img/reading (1).png" alt="" onclick="imgslider('home/img/reading (1).png')"></li>
+      <li><img src="home/img/reading.png" alt="" onclick="imgslider('home/img/reading.png')"></li>
+    </ul>
+    <ul class="sci">
+      <li><a href="#"><img src="home/img/github.png" alt=""></a></li>
+      <li><a href="#"><img src="home/img/envelope.png" alt=""></a></li>
+      <li><a href="#"><img src="home/img/linkedin.png" alt=""></a></li>
+    </ul>
+  </section>
 
-    <!-- For Graph -->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/plugins/apexchart/apexcharts.min.js"></script>
-    <script src="assets/plugins/apexchart/chart-data.js"></script>
-    <!-- End of For Graph -->
-
-    <!-- Upcoming Events -->
-    <script src="assets/plugins/simple-calendar/jquery.simple-calendar.js"></script>
-    <script src="assets/js/calander.js"></script>
-    <!-- End Of Upcoming Event -->
 
 </body>
+<script src="home/app.js"></script>
+<script type="text/javascript">
+  function imgslider(anything) {
+    document.querySelector('.image').src = anything;
+  }
+</script>
 
 </html>

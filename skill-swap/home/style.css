@@ -102,7 +102,7 @@ a {
   content: "";
   position: absolute;
   top: 2px;
-  left: 2px;
+  right: 2px;
   bottom: 2px;
   width: calc(25px - 4px);
   background: var(--primary);
@@ -111,7 +111,7 @@ a {
 }
 
 .mainContent nav #theme-toggle:checked + .theme-toggle::before {
-  left: calc(100% - (25px - 4px) - 2px);
+  right: calc(100% - (25px - 4px) - 2px);
 }
 
 .nav__links {
