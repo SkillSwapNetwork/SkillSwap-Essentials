@@ -517,7 +517,7 @@ body{
 }
 
 .content main .bottom-data .reminders{
-    flex-grow: 1;
+    /* flex-grow: 1; */
     flex-basis: 300px;
 }
 

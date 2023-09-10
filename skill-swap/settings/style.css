@@ -1,147 +1,147 @@
 :root {
-    --light: #f6f6f9;
-    --primary: #1976D2;
-    --light-primary: #CFE8FF;
-    --grey: #eee;
-    --dark-grey: #AAAAAA;
-    --dark: #363949;
-    --danger: #D32F2F;
-	--light-danger: #FECDD3;
-    --warning: #FBC02D;
-    --light-warning: --light2C6;
-    --success: #388E3C;
-    --light-success: #BBF7D0;
+  --light: #f6f6f9;
+  --primary: #1976d2;
+  --light-primary: #cfe8ff;
+  --grey: #eee;
+  --dark-grey: #aaaaaa;
+  --dark: #363949;
+  --danger: #d32f2f;
+  --light-danger: #fecdd3;
+  --warning: #fbc02d;
+  --light-warning: --light2C6;
+  --success: #388e3c;
+  --light-success: #bbf7d0;
 }
 
 body {
-    background: --dark;
-    margin-top: 20px;
+  background: --dark;
+  margin-top: 20px;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 .active-back img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding-left: 10px;
-    padding-top: 14px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-left: 10px;
+  padding-top: 14px;
 }
 
 svg::after:hover {
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding-left: 10px;
-    padding-top: 14px;
-    color: var(--primary);
-    background-color: var(--primary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-left: 10px;
+  padding-top: 14px;
+  color: var(--primary);
+  background-color: var(--primary);
 }
 
 .ui-w-80 {
-    width : 80px !important;
-    height: auto;
+  width: 80px;
+  height: auto;
 }
 
 .btn-default {
-    border-color: rgba(24, 28, 33, 0.1);
-    background  : rgba(0, 0, 0, 0);
-    color       : #4E5155;
+  border-color: rgba(24, 28, 33, 0.1);
+  background: rgba(0, 0, 0, 0);
+  color: #4e5155;
 }
 
 label.btn {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .btn-outline-primary {
-    border-color: #26B4FF;
-    background  : transparent;
-    color       : #26B4FF;
+  border-color: #26b4ff;
+  background: transparent;
+  color: #26b4ff;
 }
 
 .btn {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .text-light {
-    color: #babbbc !important;
+  color: #babbbc;
 }
 
 .btn-facebook {
-    border-color: rgba(0, 0, 0, 0);
-    background  : #3B5998;
-    color       : --dark;
+  border-color: rgba(0, 0, 0, 0);
+  background: #3b5998;
+  color: --dark;
 }
 
 .btn-instagram {
-    border-color: rgba(0, 0, 0, 0);
-    background  : #000;
-    color       : --dark;
+  border-color: rgba(0, 0, 0, 0);
+  background: #000;
+  color: --dark;
 }
 
 .card {
-    background-clip: padding-box;
-    box-shadow     : 0 1px 4px rgba(24, 28, 33, 0.012);
+  background-clip: padding-box;
+  box-shadow: 0 1px 4px rgba(24, 28, 33, 0.012);
 }
 
 .row-bordered {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .account-settings-fileinput {
-    position  : absolute;
-    visibility: hidden;
-    width     : 1px;
-    height    : 1px;
-    opacity   : 0;
+  position: absolute;
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
 }
 
 .account-settings-links .list-group-item.active {
-    font-weight: bold !important;
+  font-weight: bold;
 }
 
 html:not(.dark-style) .account-settings-links .list-group-item.active {
-    background: transparent !important;
+  background: transparent;
 }
 
-.account-settings-multiselect~.select2-container {
-    width: 100% !important;
+.account-settings-multiselect ~ .select2-container {
+  width: 100%;
 }
 
 .light-style .account-settings-links .list-group-item {
-    padding     : 0.85rem 1.5rem;
-    border-color: rgba(24, 28, 33, 0.03) !important;
+  padding: 0.85rem 1.5rem;
+  border-color: rgba(24, 28, 33, 0.03);
 }
 
 .light-style .account-settings-links .list-group-item.active {
-    color: #4e5155 !important;
+  color: #4e5155;
 }
 
 .material-style .account-settings-links .list-group-item {
-    padding     : 0.85rem 1.5rem;
-    border-color: rgba(24, 28, 33, 0.03) !important;
+  padding: 0.85rem 1.5rem;
+  border-color: rgba(24, 28, 33, 0.03);
 }
 
 .material-style .account-settings-links .list-group-item.active {
-    color: #4e5155 !important;
+  color: #4e5155;
 }
 
 .dark-style .account-settings-links .list-group-item {
-    padding     : 0.85rem 1.5rem;
-    border-color: rgba(255, 255, 255, 0.03) !important;
+  padding: 0.85rem 1.5rem;
+  border-color: rgba(255, 255, 255, 0.03);
 }
 
 .dark-style .account-settings-links .list-group-item.active {
-    color: --dark !important;
+  color: --dark;
 }
 
 .light-style .account-settings-links .list-group-item.active {
-    color: #4E5155 !important;
+  color: #4e5155;
 }
 
 .light-style .account-settings-links .list-group-item {
-    padding     : 0.85rem 1.5rem;
-    border-color: rgba(24, 28, 33, 0.03) !important;
+  padding: 0.85rem 1.5rem;
+  border-color: rgba(24, 28, 33, 0.03);
 }
